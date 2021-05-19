@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://ejin518.cafe24.com/css/common.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="header">
+        <div class="mini_cart">
+          <div id="myCart">
+            <span class="on">My Cart(<em id="number"></em>)</span>
+            <div class="cart_list" id="cart">
+              <dl>
+                <dt><img src="img/classic-tee.jpg" /></dt>
+                <dd>
+                  <p class="cart_name">Classic Tee</p>
+                  <p><em id="quan"></em>x<em class="cart_price">$75.00</em></p>
+                  <p>size<em id="cartSize"></em></p>
+                </dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <ul class="clfix">
+          <li class="pro_img">
+            <img src="img/classic-tee.jpg" />
+          </li>
+          <li class="pro_info">
+            <div class="name"><h4>Classic Tee</h4></div>
+            <div class="price"><span>$75.00</span></div>
+            <div class="details">
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </p>
+            </div>
+            <div class="size">
+              <span id="size_wrap"
+                >SIZE<em>*</em>
+                <div id="selected_size"></div
+              ></span>
+              <div class="buttons">
+                <button class="btn" id="small" data-key="size" data-value="S">
+                  S
+                </button>
+                <button class="btn" id="medium" data-key="size" data-value="M">
+                  M
+                </button>
+                <button class="btn" id="large" data-key="size" data-value="L">
+                  L
+                </button>
+              </div>
+            </div>
+            <div class="add">
+              <button id="cart">ADD TO CART</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
